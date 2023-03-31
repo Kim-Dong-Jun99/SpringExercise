@@ -1,6 +1,5 @@
 package com.goweb.springexercise.gcurest;
 
-import lombok.Builder;
 
 import java.util.Date;
 
@@ -33,7 +32,6 @@ public class User {
         this.dob = dob;
     }
 
-    @Builder
     public User(Long id, String name, Date dob) {
         this.id = id;
         this.name = name;
