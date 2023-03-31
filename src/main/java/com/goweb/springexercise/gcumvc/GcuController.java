@@ -13,10 +13,10 @@ public class GcuController {
     }
 
     @PostMapping(value = "/save")
-    public ModelAndView save(@ModelAttribute User user) {
+    public ModelAndView save(@ModelAttribute Car car) {
         ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setViewName("user-data");
-        modelAndView.addObject("user", user);
+        modelAndView.setViewName("car-data");
+        modelAndView.addObject("car", car);
         return modelAndView;
     }
 }
